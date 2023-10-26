@@ -8,9 +8,14 @@ namespace SOLID_Principle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter Email:");
+            string emailAddress = Console.ReadLine();
+
+            Console.WriteLine("Enter Password:");
+            string password = Console.ReadLine();
+
             UserService userService = new UserService(new EmailService());
-            userService.Register("harsh@gmail.com", "123456");
+            userService.Register(emailAddress, password);
             Console.ReadLine();
         }
         public class UserService
