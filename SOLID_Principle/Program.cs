@@ -29,7 +29,7 @@ namespace SOLID_Principle
             {
                 if (!emailService.ValidateEmail(email))
                 {
-                    Console.WriteLine("Invalid User.");
+                    Console.WriteLine("Invalid Email.");
                 }
                 else
                 {
