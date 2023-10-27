@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Single_Responsibility_Principle", "SOLID_Principle\Single_Responsibility_Principle.csproj", "{27C9F766-D055-4A09-8C20-90F5E05ECC3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Single_Responsibility_Principle", "SOLID_Principle\Single_Responsibility_Principle.csproj", "{27C9F766-D055-4A09-8C20-90F5E05ECC3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Open_Close_Principle", "Open_Close_Principle\Open_Close_Principle.csproj", "{AA62BF05-E289-439A-8E56-BD8D0D786541}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Open_Close_Principle", "Open_Close_Principle\Open_Close_Principle.csproj", "{AA62BF05-E289-439A-8E56-BD8D0D786541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liskov_Substitution_Principle", "Liskov_Substitution_Principle\Liskov_Substitution_Principle.csproj", "{B456975B-1C69-43E4-9D6B-D1BEBDD2273B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AA62BF05-E289-439A-8E56-BD8D0D786541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA62BF05-E289-439A-8E56-BD8D0D786541}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA62BF05-E289-439A-8E56-BD8D0D786541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B456975B-1C69-43E4-9D6B-D1BEBDD2273B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B456975B-1C69-43E4-9D6B-D1BEBDD2273B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B456975B-1C69-43E4-9D6B-D1BEBDD2273B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B456975B-1C69-43E4-9D6B-D1BEBDD2273B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
