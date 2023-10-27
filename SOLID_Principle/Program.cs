@@ -1,60 +1,25 @@
-﻿using System;
+﻿
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Net.Mail;
 
-namespace SOLID_Principle
+namespace Single_Responsibility_Principle
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Email:");
-            string emailAddress = Console.ReadLine();
+            // Create instances of different shapes
+            Shape circle = new Circle(5);
+            Shape rectangle = new Rectangle(4, 6);
+            Shape triangle = new Triangle(3, 4);
 
-            Console.WriteLine("Enter Password:");
-            string password = Console.ReadLine();
+            // Calculate and display the areas of these shapes
+            Console.WriteLine("Circle Area: " + circle.Area());
+            Console.WriteLine("Rectangle Area: " + rectangle.Area());
+            Console.WriteLine("Triangle Area: " + triangle.Area());
 
-            UserService userService = new UserService(new EmailService());
-            userService.Register(emailAddress, password);
             Console.ReadLine();
-        }
-        public class UserService
-        {
-            EmailService emailService;
-            public UserService(EmailService aEmailService)
-            {
-                emailService = aEmailService;
-            }
-            public void Register(string email, string password)
-            {
-                if (!emailService.ValidateEmail(email))
-                {
-                    Console.WriteLine("Invalid Email.");
-                }
-                else
-                {
-                    Console.WriteLine("User Added/Register.");
-                    emailService.SendEmail(new MailMessage("myname@mydomain.com", email) { Subject = "Hi. How are you!" });
-                }
-            }
-        }
-        public class EmailService
-        {
-            public EmailService()
-            {
-                
-            }
-            public bool ValidateEmail(string email)
-            {
-                Console.WriteLine("Doing simple email validation.");
-                Console.WriteLine("Validating @ present in email or not.");
-                return email.Contains("@");
-            }
-            public void SendEmail(MailMessage message)
-            {
-                //_smtpClient.Send(message);
-                Console.WriteLine("Email Sent to new user.");
-            }
         }
     }
 }
